@@ -30,17 +30,13 @@ body > header {
 
 header .logo-search form  {
     width: 50%;
+    
 }
 
 header .user {
     float: right;
 }
 
-header .user a {
-    font-size: 13px;
-    color: #89949b;
-    padding-top: 5px;
-}
 
 main h2 {
     margin-top: 4px;
@@ -51,19 +47,7 @@ main article {
     display: inline-block;
 }
 
-h3 {
-    color: #b8c3c9;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
-nav ul li a { 
-    font-size: 14px;
-    font-weight: normal;
-    color: #828c92;
-}
+    
 
 nav ul li a:hover {
     color: #fe7f19;
@@ -83,96 +67,40 @@ nav ul li:last-child {
     margin-bottom: 30px;
 }
 
-h1 {
-    color: #4b5c66;
-    font-size: 24px;
-    font-weight: normal;
-    margin: 0 0 8px 0;
-}
 
-.name p { 
-    color: #a0aab1;
-    font-size: 12px;
-}
 
 .name p img { 
     margin-left: 12px;
 }
 
 
-.stats-links {
-    color: #4b5c66;
-    font-size: 12px;
-    padding: 15px 0px 10px 0px;
-    border-bottom: 1px solid #e1e6e9;
-    margin-bottom: 20px;
-}
+    
 
 .stats-links span, .stats-links a {
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .stats-links a:last-child {
     margin-right: 0;
 }
 
-.stats-links a {
-    font-size: 12px;
-    font-weight: normal;
-    color: #4b5c66;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #4b5c66;
-}
+    
 
 header form {
     width: 100%;
 }
 
-input.search {
-    background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
-    box-shadow: none;
-    height: 28px;
-    width: 100%;
-    font-size: 13px;
-    padding: 3px 6px 3px 25px;
-    border: 1px solid #d0dde9;
-    margin: 0;
-    border-radius: 15px;
-    top: 11px;
-    box-shadow: inset 1px 1px 5px #d5d5d5;
-}
+    
 
 input.submit {
     display: none;
 }
 
-.station {
-    font-size: 12px;
-    color: #008fd5;
-    border-radius: 5px;
-    border: 1px solid #b8c3c9;
-    cursor: pointer;
-    padding: 7px 10px 7px 30px;
-    box-shadow: 1px 1px #d5d5d5;
-    background: url("../img/icon/station.png") no-repeat 8px;
-    transition: all 0.4s;
-}
 
 .station:hover {
     background-color: #0A90D5;
     color: white;
     background-image: url("../img/icon/station-white.png");
-}
-
-
-#albums article {
-    font-size: 13px;
-    color: #89949b;
-    margin: 10px 0;
 }
 
 #albums article img {
@@ -218,4 +146,263 @@ nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
 
 
+@media screen and (min-width: 600px)
+{
+    #albums article 
+    {
+        font-size: 1em;
+        color: #89949b;
+        margin: 10px 0;
+    }
+    .station {
+        font-size: 1em;
+        color: #008fd5;
+        border-radius: 5px;
+        border: 1px solid #b8c3c9;
+        cursor: pointer;
+        padding: 7px 10px 7px 30px;
+        box-shadow: 1px 1px #d5d5d5;
+        background: url("../img/icon/station.png") no-repeat 8px;
+        transition: all 0.4s;
+    }
 
+    input.search {
+        background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
+        box-shadow: none;
+        height: 28px;
+        width: 100%;
+        font-size: 1em;
+        padding: 3px 6px 3px 25px;
+        border: 1px solid #d0dde9;
+        margin: 0;
+        border-radius: 15px;
+        top: 11px;
+        box-shadow: inset 1px 1px 5px #d5d5d5;
+    }
+
+    .stats-links a {
+        font-size: 1em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    .stats-links {
+        color: #4b5c66;
+        font-size: 1em;
+        padding: 15px 0px 10px 0px;
+        border-bottom: 1px solid #e1e6e9;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #4b5c66;
+        font-size: 2em;
+        font-weight: normal;
+        margin: 0 0 8px 0;
+    }
+
+    .name p { 
+        color: #a0aab1;
+        font-size: 1em;
+    }
+
+    h3 {
+        color: #b8c3c9;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a { 
+        font-size: 1.1em;
+        font-weight: normal;
+        color: #828c92;
+    }
+
+    header .user a {
+        font-size: 1em;
+        color: #89949b;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #albums article 
+    {
+        font-size: 1.5em;
+        color: #89949b;
+        margin: 10px 0;
+    }
+    .station {
+        font-size: 1.5em;
+        color: #008fd5;
+        border-radius: 5px;
+        border: 1px solid #b8c3c9;
+        cursor: pointer;
+        padding: 7px 10px 7px 30px;
+        box-shadow: 1px 1px #d5d5d5;
+        background: url("../img/icon/station.png") no-repeat 8px;
+        transition: all 0.4s;
+    }
+
+    input.search {
+        background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
+        box-shadow: none;
+        height: 28px;
+        width: 100%;
+        font-size: 1.5em;
+        padding: 3px 6px 3px 25px;
+        border: 1px solid #d0dde9;
+        margin: 0;
+        border-radius: 15px;
+        top: 11px;
+        box-shadow: inset 1px 1px 5px #d5d5d5;
+    }
+
+    .stats-links a {
+        font-size: 1.5em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    h2 {
+        font-size: 3em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    .stats-links {
+        color: #4b5c66;
+        font-size: 1.5em;
+        padding: 15px 0px 10px 0px;
+        border-bottom: 1px solid #e1e6e9;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #4b5c66;
+        font-size: 3em;
+        font-weight: normal;
+        margin: 0 0 8px 0;
+    }
+
+    .name p { 
+        color: #a0aab1;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        color: #b8c3c9;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a { 
+        font-size: 1.6em;
+        font-weight: normal;
+        color: #828c92;
+    }
+
+    header .user a {
+        font-size: 1.5em;
+        color: #89949b;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    #albums article 
+    {
+        font-size: 2em;
+        color: #89949b;
+        margin: 10px 0;
+    }
+    .station {
+        font-size: 2em;
+        color: #008fd5;
+        border-radius: 5px;
+        border: 1px solid #b8c3c9;
+        cursor: pointer;
+        padding: 7px 10px 7px 30px;
+        box-shadow: 1px 1px #d5d5d5;
+        background: url("../img/icon/station.png") no-repeat 8px;
+        transition: all 0.4s;
+    }
+
+    input.search {
+        background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
+        box-shadow: none;
+        height: 28px;
+        width: 100%;
+        font-size: 2em;
+        padding: 3px 6px 3px 25px;
+        border: 1px solid #d0dde9;
+        margin: 0;
+        border-radius: 15px;
+        top: 11px;
+        box-shadow: inset 1px 1px 5px #d5d5d5;
+    }
+
+    .stats-links a {
+        font-size: 2em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    h2 {
+        font-size: 4em;
+        font-weight: normal;
+        color: #4b5c66;
+    }
+
+    .stats-links {
+        color: #4b5c66;
+        font-size: 2em;
+        padding: 15px 0px 10px 0px;
+        border-bottom: 1px solid #e1e6e9;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        color: #4b5c66;
+        font-size: 4em;
+        font-weight: normal;
+        margin: 0 0 8px 0;
+    }
+
+    .name p { 
+        color: #a0aab1;
+        font-size: 2em;
+    }
+
+    h3 {
+        color: #b8c3c9;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a { 
+        font-size: 2.2em;
+        font-weight: normal;
+        color: #828c92;
+    }
+
+    header .user a {
+        font-size: 2em;
+        color: #89949b;
+        padding-top: 5px;
+    }
+}
